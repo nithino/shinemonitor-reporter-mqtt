@@ -18,7 +18,7 @@ Edit the `WorkingDirectory` and `ExecStart` lines in `shinemonitor_reporter_mqtt
 Then execute the below commands to register and enable the service.
 
 ```commandline
-sudo ln -s shinemonitor_reporter_mqtt.service /etc/systemd/system/shinemonitor_reporter_mqtt.service
+sudo systemctl enable /home/user/shinemonitor-reporter-mqtt/shinemonitor_reporter_mqtt.service
 
 sudo systemctl daemon-reload
 
